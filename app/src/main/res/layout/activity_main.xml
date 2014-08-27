@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.airk.exercise.volley.MainActivity">
+
+    <TableLayout
+            android:id="@+id/login_stuff"
+            android:layout_margin="16dp"
+            android:stretchColumns="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                    android:layout_marginRight="8dp"
+                    android:text="Username"/>
+            <EditText
+                    android:id="@+id/username"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                    android:layout_marginRight="8dp"
+                    android:text="Password"/>
+            <EditText
+                    android:id="@+id/password"
+                    android:inputType="textPassword"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+            android:id="@+id/login"
+            android:text="Login"
+            android:layout_below="@id/login_stuff"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv"
+            android:layout_alignParentBottom="true"
+            android:text="@string/hello_world"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>
